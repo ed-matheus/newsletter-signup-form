@@ -12,13 +12,16 @@
     <!-- CSS file -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <!-- Responsive CSSS= -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
     <!-- Google Fonts (Font Family) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- JavaScript file -->
-    <script href="assets/js/scripts.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
     
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   </head>
@@ -28,12 +31,12 @@
     <div class="main_container d-flex flex-column align-items-center">
 
       <!-- Sign-up form start -->
-      <div class="card_container w-100 h-100">
+      <div class="card_container w-100 h-100" style="display: none;">
         <div class="image_container">
           <img class="mobile-image w-100" src="assets/images/illustration-sign-up-mobile.svg" alt="newsletter illustration">
         </div>
 
-        <div class="form p-4">
+        <div class="form_container p-4">
           <h1>Stay updated</h1>
 
           <p>
@@ -56,7 +59,10 @@
           </ul>
 
           <form class="mb-4">
-            <label for="email">Email address</label><br>
+            <div class="label-container d-flex justify-content-between">
+              <label for="email">Email address</label><br>
+              <span>Valid email required</span>
+            </div>
             <input class="w-100 rounded-3 p-3" type="text" placeholder="email@company.com" id="email">
           </form>
 
@@ -65,22 +71,29 @@
       </div>
       <!-- Sign-up form end -->
 
-    </div>
+      <!-- Success message start -->
+      <div class="success_container d-flex flex-column justify-content-between">
 
-    <!-- Success message start -->
+        <div class="info_container">
+          <img class="mb-4" src="assets/images/icon-list.svg" alt="check icon" width="60px">
+          <h1 class="mb-3">Thanks for<br> subscribing!</h1>
 
-    <!-- 
-    Thanks for subscribing!
+          <p>
+            A confirmation email has been sent to <span class="fw-bold">ash@loremcompany.com</span>. 
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
 
-    A confirmation email has been sent to ash@loremcompany.com. 
-    Please open it and click the button inside to confirm your subscription.
+        <button class="w-100 rounded-3 p-3 text-light">
+          <span>Dismiss message</span>
+        </button>
 
-    Dismiss message 
-    -->
+      </div>
+      <!-- Success message end -->
 
-    <!-- Success message end -->
+    </div>    
     
-    <div class="attribution mt-4">
+    <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/ed-matheus" target="_blank">Ed Matheus</a>.
     </div>

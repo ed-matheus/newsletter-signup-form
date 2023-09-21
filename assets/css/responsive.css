@@ -1,0 +1,128 @@
+/* MEDIA QUERIES (RESPONSIVITY) */
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+@media (min-width: 576px) {
+    body {
+        background-color: hsl(235, 18%, 26%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_container {
+        width: 100%;
+    }
+
+	.card_container {
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 200px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .form_container {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+	.image_container > .mobile-image {
+        opacity: 0;
+    }
+
+    .image_container {
+        border-radius: 12px;
+        background: url('../images/illustration-sign-up-desktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .success_container {
+        background-color: white;
+        height: 100%;
+        width: 70%;
+        padding: 50px;
+        margin-bottom: 200px;
+        border-radius: 30px;
+    }
+
+    .attribution {
+        color: white;
+    }
+
+    .attribution > a {
+        color: lightblue;
+    }
+}
+
+@media (min-width: 760px) {
+	.main_container {
+        width: 80%;
+    }
+
+    .form_container {
+        width: 60%;
+    }
+
+    .success_container {
+        width: 65%;
+    }
+
+    button:hover {
+        background-color: rgba(255,98,87,1);
+        background: linear-gradient(135deg, rgba(255,98,87,1) 0%, rgba(255,98,87,1) 46%, rgba(254,103,62,1) 61%, rgba(254,103,62,1) 100%);
+    }
+}
+
+@media (min-width: 992px) {
+    .main_container {
+        width: 70%;
+    }
+
+    .form_container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+	.main_container {
+        width: 60%;
+    }
+
+    .form_container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1400px) {
+	.main_container {
+        width: 45%;
+    }
+
+	.card_container {
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 200px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .form_container {
+        width: 50%;
+    }
+
+    .success_container {
+        width: 55%;
+    }
+}

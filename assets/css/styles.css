@@ -21,10 +21,18 @@ form > ul > li {
     list-style: none;
 }
 
-form > label {
+.label-container > label {
     color: hsl(234, 29%, 20%);
     font-weight: 700;
     font-size: 0.8rem;
+    float: left;
+}
+
+.label-container > span {
+    color: #df6767;
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: none;
 }
 
 form > input {
@@ -45,6 +53,18 @@ button:active {
     background: linear-gradient(135deg, rgba(255,98,87,1) 0%, rgba(255,98,87,1) 46%, rgba(254,103,62,1) 61%, rgba(254,103,62,1) 100%);
 }
 
+/* SUCCESS CONTAINER */
+.success_container{ 
+    margin-top: 100px;
+    padding: 25px;
+    height: 730px;
+}
+
+.info_container > h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 /* FOOTER */
 .attribution { 
     font-size: 0.8rem; 
@@ -54,126 +74,4 @@ button:active {
 .attribution a { 
     font-size: 0.8rem; 
     color: hsl(228, 45%, 44%); 
-}
-
-/* MEDIA QUERIES (RESPONSIVITY) */
-/*
-- Mobile: 375px
-- Desktop: 1440px
-*/
-
-@media (min-width: 576px) {
-    body {
-        background-color: hsl(235, 18%, 26%);
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main_container {
-        width: 100%;
-    }
-
-	.card_container {
-        border-radius: 30px;
-        background-color: white;
-        display: flex;
-        flex-direction: row-reverse;
-        width: 200px;
-        height: 200px;
-        padding: 18px;
-    }
-
-    .form {
-        width: 60%;
-        margin-right: 30px;
-    }
-
-	.image_container > .mobile-image {
-        opacity: 0;
-    }
-
-    .image_container {
-        border-radius: 12px;
-        background: url('../images/illustration-sign-up-desktop.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .attribution {
-        color: white;
-    }
-
-    .attribution > a {
-        color: lightblue;
-    }
-}
-
-@media (min-width: 760px) {
-	.main_container {
-        width: 80%;
-    }
-
-    .form {
-        width: 60%;
-    }
-}
-
-@media (min-width: 992px) {
-    .main_container {
-        width: 70%;
-    }
-
-    .form {
-        width: 60%;
-    }
-}
-
-@media (min-width: 1200px) {
-	.main_container {
-        width: 60%;
-    }
-
-	.card_container {
-        border-radius: 30px;
-        background-color: white;
-        display: flex;
-        flex-direction: row-reverse;
-        width: 200px;
-        height: 200px;
-        padding: 18px;
-    }
-
-    .form {
-        width: 50%;
-    }
-
-    button:hover {
-        background-color: rgba(255,98,87,1);
-        background: linear-gradient(135deg, rgba(255,98,87,1) 0%, rgba(255,98,87,1) 46%, rgba(254,103,62,1) 61%, rgba(254,103,62,1) 100%);
-    }
-}
-
-@media (min-width: 1400px) {
-	.main_container {
-        width: 45%;
-    }
-
-	.card_container {
-        border-radius: 30px;
-        background-color: white;
-        display: flex;
-        flex-direction: row-reverse;
-        width: 200px;
-        height: 200px;
-        padding: 18px;
-    }
-
-    .form {
-        width: 50%;
-    }
 }
