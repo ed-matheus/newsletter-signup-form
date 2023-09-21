@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.card_container > p {
+    color: hsl(234, 29%, 20%);
+    font-weight: 400;
+}
+
+h1 {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+/* FORM */
+form > ul > li {
+    list-style: none;
+}
+
+form > label {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+form > input {
+    border: 1px solid #d6d8e5;
+}
+
+form > input:active {
+    border: hsl(235, 18%, 26%);
+}
+
+button {
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+}
+
+button:hover {
+    background-color: rgba(255,98,87,1);
+    background: linear-gradient(135deg, rgba(255,98,87,1) 0%, rgba(255,98,87,1) 46%, rgba(254,103,62,1) 61%, rgba(254,103,62,1) 100%);
+}
+
+/* FOOTER */
+.attribution { 
+    font-size: 0.8rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    font-size: 0.8rem; 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* MEDIA QUERIES (RESPONSIVITY) */
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+@media (min-width: 576px) {
+    body {
+        background-color: hsl(235, 18%, 26%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_container {
+        width: 100%;
+    }
+
+	.card_container {
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 200px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .form {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+	.image_container > .mobile-image {
+        opacity: 0;
+    }
+
+    .image_container {
+        border-radius: 12px;
+        background: url('../images/illustration-sign-up-desktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .attribution {
+        color: white;
+    }
+
+    .attribution > a {
+        color: lightblue;
+    }
+}
+
+@media (min-width: 760px) {
+	.main_container {
+        width: 80%;
+    }
+
+    .form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .main_container {
+        width: 70%;
+    }
+
+    .form {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+	.main_container {
+        width: 60%;
+    }
+
+	.card_container {
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 200px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .form {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1400px) {
+	.main_container {
+        width: 45%;
+    }
+
+	.card_container {
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 200px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .form {
+        width: 50%;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Google Fonts (Font Family) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript file -->
+    <script href="assets/js/scripts.js" defer></script>
+    
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  </head>
+
+  <body>
+
+    <div class="main_container d-flex flex-column align-items-center">
+
+      <!-- Sign-up form start -->
+      <div class="card_container w-100 h-100">
+        <div class="image_container">
+          <img class="mobile-image w-100" src="assets/images/illustration-sign-up-mobile.svg" alt="newsletter illustration">
+        </div>
+
+        <div class="form p-4">
+          <h1>Stay updated</h1>
+
+          <p>
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <ul class="list-group mb-3">
+            <li class="d-flex align-items-start">
+              <img class="me-2" src="assets/images/icon-list.svg" alt="">
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li class="d-flex align-items-start">
+              <img class="me-2" src="assets/images/icon-list.svg" alt="">
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li class="d-flex align-items-start">
+              <img class="me-2" src="assets/images/icon-list.svg" alt="">
+              <p>And much more!</p>
+            </li>
+          </ul>
+
+          <form class="mb-4">
+            <label for="email">Email address</label><br>
+            <input class="w-100 rounded-3 p-3" type="text" placeholder="email@company.com" id="email">
+          </form>
+
+          <button class="w-100 rounded-3 p-3 text-light">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+      <!-- Sign-up form end -->
+
+    </div>
+
+    <!-- Success message start -->
+
+    <!-- 
+    Thanks for subscribing!
+
+    A confirmation email has been sent to ash@loremcompany.com. 
+    Please open it and click the button inside to confirm your subscription.
+
+    Dismiss message 
+    -->
+
+    <!-- Success message end -->
+    
+    <div class="attribution mt-4">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/ed-matheus" target="_blank">Ed Matheus</a>.
+    </div>
+  </body>
+</html>
