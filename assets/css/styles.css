@@ -40,7 +40,7 @@ button {
     background-color: hsl(234, 29%, 20%);
 }
 
-button:hover {
+button:active {
     background-color: rgba(255,98,87,1);
     background: linear-gradient(135deg, rgba(255,98,87,1) 0%, rgba(255,98,87,1) 46%, rgba(254,103,62,1) 61%, rgba(254,103,62,1) 100%);
 }
@@ -150,6 +150,11 @@ button:hover {
 
     .form {
         width: 50%;
+    }
+
+    button:hover {
+        background-color: rgba(255,98,87,1);
+        background: linear-gradient(135deg, rgba(255,98,87,1) 0%, rgba(255,98,87,1) 46%, rgba(254,103,62,1) 61%, rgba(254,103,62,1) 100%);
     }
 }
 
