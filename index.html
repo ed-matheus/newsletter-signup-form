@@ -28,10 +28,10 @@
 
   <body>
 
-    <div class="main_container d-flex flex-column align-items-center">
+    <div class="main_container">
 
       <!-- Sign-up form start -->
-      <div class="card_container w-100 h-100" style="display: none;">
+      <div class="card_container w-100 h-100">
         <div class="image_container">
           <img class="mobile-image w-100" src="assets/images/illustration-sign-up-mobile.svg" alt="newsletter illustration">
         </div>
@@ -71,7 +71,11 @@
       </div>
       <!-- Sign-up form end -->
 
-      <!-- Success message start -->
+    </div>
+    
+    <!-- Success message start -->
+    <div class="main_success_container hide">
+
       <div class="success_container d-flex flex-column justify-content-between">
 
         <div class="info_container">
@@ -79,7 +83,7 @@
           <h1 class="mb-3">Thanks for<br> subscribing!</h1>
 
           <p>
-            A confirmation email has been sent to <span class="fw-bold">ash@loremcompany.com</span>. 
+            A confirmation email has been sent to <span class="fw-bold"></span>. 
             Please open it and click the button inside to confirm your subscription.
           </p>
         </div>
@@ -89,9 +93,9 @@
         </button>
 
       </div>
-      <!-- Success message end -->
 
-    </div>    
+    </div>
+    <!-- Success message end -->
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

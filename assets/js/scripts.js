@@ -1,13 +1,12 @@
 // Selecting Elements from the DOM
 const emailInput = document.querySelector('form input');
 const submitBtn = document.querySelector('button');
+const dismissBtn = document.querySelector('.success_container button');
 const warningMessage = document.querySelector('.label-container span');
 
-const paragraph = document.querySelector('.form_container p');
-const h1 = document.querySelector('.form_container h1');
-const list = document.querySelector('.form_container ul');
-const newsletterImage = document.querySelector('.image_container');
-const form = document.querySelector('form');
+const emailBinding = document.querySelector('.info_container p span');
+const mainPage = document.querySelector('.main_container');
+const successSignUp = document.querySelector('.main_success_container');
 
 // Functions
 const test = () => {
@@ -25,23 +24,23 @@ const test = () => {
         warningMessage.setAttribute('style', 'display: inline;')
 
     } else {
-        emailInput.setAttribute('style', 
-            `
-            border: 1px solid #d6d8e5;
-            background-color: ;
-            `  
-        )
+        mainPage.classList.toggle('hide')
+        successSignUp.classList.toggle('hide')
 
-        warningMessage.setAttribute('style', 'display: none;')
-
-        
+        emailBinding.innerHTML = email
     }
 };
+
+const dismissButton = () => {
+    mainPage.classList.toggle('hide')
+    successSignUp.classList.toggle('hide')
+}
 
 // Verifying if the email is valid
 function hasAtSymbol(email) {
     return email.includes('@')
 }
 
-// Adding Event Listener to the button
+// Adding Event Listener to the buttons
 submitBtn.addEventListener("click", test);
+dismissBtn.addEventListener("click", dismissButton);

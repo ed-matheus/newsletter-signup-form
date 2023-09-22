@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+.hide {
+    display: none;
+}
+
 .card_container > p {
     color: hsl(234, 29%, 20%);
     font-weight: 400;
@@ -55,9 +59,12 @@ button:active {
 
 /* SUCCESS CONTAINER */
 .success_container{ 
-    margin-top: 100px;
-    padding: 25px;
-    height: 730px;
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    height: 450px;
+    margin: auto;
+    border-radius: 30px;
 }
 
 .info_container > h1 {
@@ -75,3 +82,113 @@ button:active {
     font-size: 0.8rem; 
     color: hsl(228, 45%, 44%); 
 }
+
+/* MEDIA QUERIES (RESPONSIVITY) */
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+@media (max-width: 576px) {
+    .success_container{ 
+        padding: 25px;
+        height: 820px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    body {
+        background-color: hsl(235, 18%, 26%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_container {
+        width: 100%;
+    }
+
+	.card_container {
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 200px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .form_container {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+	.image_container > .mobile-image {
+        opacity: 0;
+    }
+
+    .image_container {
+        border-radius: 12px;
+        background: url('../images/illustration-sign-up-desktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    button:hover {
+        background-color: rgba(255,98,87,1);
+        background: linear-gradient(135deg, rgba(255,98,87,1) 0%, rgba(255,98,87,1) 46%, rgba(254,103,62,1) 61%, rgba(254,103,62,1) 100%);
+    }
+
+    .attribution {
+        color: white;
+    }
+
+    .attribution > a {
+        color: lightblue;
+    }
+}
+
+@media (min-width: 760px) {
+	.main_container {
+        width: 80%;
+    }
+
+    .form_container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .main_container {
+        width: 70%;
+    }
+
+    .form_container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1400px) {
+	.main_container {
+        width: 45%;
+    }
+
+	.card_container {
+        border-radius: 30px;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 200px;
+        height: 200px;
+        padding: 18px;
+    }
+
+    .form_container {
+        width: 50%;
+    }
+}   
